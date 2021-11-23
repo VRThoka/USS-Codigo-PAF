@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1161</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1161</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuViajes">
+    <property name="title">
+     <string>Viajes</string>
+    </property>
+    <addaction name="actionRegistrar_viajes"/>
+   </widget>
+   <widget class="QMenu" name="menuClientes">
+    <property name="title">
+     <string>Clientes</string>
+    </property>
+    <addaction name="actionRegistrar_cliente"/>
+    <addaction name="actionSeleccionar_categor_a_de_avi_n"/>
+    <addaction name="actionLista_cliente"/>
+    <addaction name="actionBuscar_cliente"/>
+   </widget>
+   <widget class="QMenu" name="menuVentas">
+    <property name="title">
+     <string>Ventas</string>
+    </property>
+    <addaction name="actionRegistrar_venta"/>
+    <addaction name="actionBuscar_venta"/>
+    <addaction name="actionListar_venta"/>
+   </widget>
+   <widget class="QMenu" name="menuSalir">
+    <property name="title">
+     <string>Salir</string>
+    </property>
+    <addaction name="actionAcerca_de"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuLista_de_vuelos">
+    <property name="title">
+     <string>Lista de vuelos</string>
+    </property>
+    <addaction name="actionLista_Destinos"/>
+    <addaction name="actionLista_Fechas"/>
+   </widget>
+   <widget class="QMenu" name="menuPersonal">
+    <property name="title">
+     <string>Personal</string>
+    </property>
+    <widget class="QMenu" name="menuListar_aeromoza">
+     <property name="title">
+      <string>Listar aeromozas</string>
+     </property>
+     <addaction name="actionBuscar_aeromoza"/>
+    </widget>
+    <widget class="QMenu" name="menuRegistrar_piloto">
+     <property name="title">
+      <string>Listar pilotos</string>
+     </property>
+     <addaction name="actionBuscar_piloto"/>
+    </widget>
+    <addaction name="actionRegistrar_aeromoza"/>
+    <addaction name="actionRegistrar_piloto"/>
+    <addaction name="menuListar_aeromoza"/>
+    <addaction name="menuRegistrar_piloto"/>
+   </widget>
+   <widget class="QMenu" name="menuAvi_n">
+    <property name="title">
+     <string>Avión</string>
+    </property>
+    <addaction name="actionLista_aviones"/>
+    <addaction name="actionRegistrar_avion"/>
+    <addaction name="actionBuscar_avi_n"/>
+   </widget>
+   <widget class="QMenu" name="menuTripulaci_n">
+    <property name="title">
+     <string>Tripulación</string>
+    </property>
+    <addaction name="actionAeromoza_en_vuelo"/>
+    <addaction name="actionRegistrar_piloto_en_avi_n"/>
+    <addaction name="actionRegistrar_pasajero"/>
+    <addaction name="actionListar_aeromoza_2"/>
+    <addaction name="actionListar_aeromoza_3"/>
+    <addaction name="actionListar_Piloto"/>
+    <addaction name="actionBuscara_pilot"/>
+   </widget>
+   <widget class="QMenu" name="menuProgramaci_n_de_vuelos">
+    <property name="title">
+     <string>Programación de vuelos</string>
+    </property>
+    <widget class="QMenu" name="menuRegistrar_destino">
+     <property name="title">
+      <string>Registrar destino</string>
+     </property>
+     <addaction name="actionCategor_a_de_avi_n"/>
+    </widget>
+    <addaction name="menuRegistrar_destino"/>
+    <addaction name="actionRegistrar_fecha"/>
+   </widget>
+   <addaction name="menuAvi_n"/>
+   <addaction name="menuPersonal"/>
+   <addaction name="menuTripulaci_n"/>
+   <addaction name="menuLista_de_vuelos"/>
+   <addaction name="menuProgramaci_n_de_vuelos"/>
+   <addaction name="menuViajes"/>
+   <addaction name="menuVentas"/>
+   <addaction name="menuClientes"/>
+   <addaction name="menuSalir"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRegistrar_aeromoza">
+   <property name="text">
+    <string>Registrar aeromoza</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_piloto">
+   <property name="text">
+    <string>Registrar piloto</string>
+   </property>
+  </action>
+  <action name="actionAeromoza_en_vuelo">
+   <property name="text">
+    <string>Registrar aeromoza en avión</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_piloto_en_avi_n">
+   <property name="text">
+    <string>Registrar piloto en avión</string>
+   </property>
+  </action>
+  <action name="actionDestino">
+   <property name="text">
+    <string>Destino</string>
+   </property>
+  </action>
+  <action name="actionSalida">
+   <property name="text">
+    <string>Salida</string>
+   </property>
+  </action>
+  <action name="actionDestino_2">
+   <property name="text">
+    <string>Destino</string>
+   </property>
+  </action>
+  <action name="actionTiempo_de_vuelo">
+   <property name="text">
+    <string>Tiempo de vuelo</string>
+   </property>
+  </action>
+  <action name="actionBuscar_aeromoza">
+   <property name="text">
+    <string>Buscar aeromoza</string>
+   </property>
+  </action>
+  <action name="actionBuscar_piloto">
+   <property name="text">
+    <string>Buscar piloto</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_cliente">
+   <property name="text">
+    <string>Registrar cliente...</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_pasajero">
+   <property name="text">
+    <string>Registrar pasajero</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="text">
+    <string>Acerca de...</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir...</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_venta">
+   <property name="text">
+    <string>Registrar venta</string>
+   </property>
+  </action>
+  <action name="actionBuscar_venta">
+   <property name="text">
+    <string>Buscar venta</string>
+   </property>
+  </action>
+  <action name="actionListar_venta">
+   <property name="text">
+    <string>Listar venta</string>
+   </property>
+  </action>
+  <action name="actionSeleccionar_categor_a_de_avi_n">
+   <property name="text">
+    <string>Seleccionar categoría de avión...</string>
+   </property>
+  </action>
+  <action name="actionCategor_a_de_avi_n">
+   <property name="text">
+    <string>Categoría de avión</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_fecha">
+   <property name="text">
+    <string>Registrar fecha</string>
+   </property>
+  </action>
+  <action name="actionSeleccionar_fecha_de_vuelo">
+   <property name="text">
+    <string>Seleccionar fecha de vuelo</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_vendedor">
+   <property name="text">
+    <string>Registrar vendedor</string>
+   </property>
+  </action>
+  <action name="actionBuscar_vendedor">
+   <property name="text">
+    <string>Buscar vendedor</string>
+   </property>
+  </action>
+  <action name="actionDestinos">
+   <property name="text">
+    <string>Destinos</string>
+   </property>
+  </action>
+  <action name="actionFecha">
+   <property name="text">
+    <string>Fecha</string>
+   </property>
+  </action>
+  <action name="actionLista_Destinos">
+   <property name="text">
+    <string>Lista Destinos</string>
+   </property>
+  </action>
+  <action name="actionLista_Fechas">
+   <property name="text">
+    <string>Lista Fechas</string>
+   </property>
+  </action>
+  <action name="actionLista_cliente">
+   <property name="text">
+    <string>Lista cliente...</string>
+   </property>
+  </action>
+  <action name="actionListar_aeromoza_2">
+   <property name="text">
+    <string>Listar aeromoza</string>
+   </property>
+  </action>
+  <action name="actionListar_aeromoza_3">
+   <property name="text">
+    <string>Buscar aeromoza</string>
+   </property>
+  </action>
+  <action name="actionListar_Piloto">
+   <property name="text">
+    <string>Listar piloto</string>
+   </property>
+  </action>
+  <action name="actionBuscara_pilot">
+   <property name="text">
+    <string>Buscara piloto</string>
+   </property>
+  </action>
+  <action name="actionBuscar_cliente">
+   <property name="text">
+    <string>Buscar cliente...</string>
+   </property>
+  </action>
+  <action name="actionLista_aviones">
+   <property name="text">
+    <string>Lista aviones</string>
+   </property>
+  </action>
+  <action name="actionCategor_a">
+   <property name="text">
+    <string>Categoría</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_avion">
+   <property name="text">
+    <string>Registrar avion</string>
+   </property>
+  </action>
+  <action name="actionBuscar_avi_n">
+   <property name="text">
+    <string>Buscar avión</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_viajes">
+   <property name="text">
+    <string>Registrar viajes...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
